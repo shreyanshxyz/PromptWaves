@@ -1,34 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PromptWaves
 
-## Getting Started
+## Project Description
 
-First, run the development server:
+PromptWaves is a website where people can sign up/log in and submit their best AI chatbot prompts to share with users around the world. The website is built on the Next.js framework, using JavaScript, NextAuth, MongoDB, and Tailwind CSS.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## Steps to Locally Clone the Project and Run It
+
+1. Clone the repository from GitHub:
+
+```
+git clone https://github.com/your-username/promptwaves.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install the dependencies:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+cd promptwaves
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Create a .env file and add the following environment variables:
 
-## Learn More
+```
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_URL_INTERNAL=http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Start the development server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The website will be available at http://localhost:3000.
 
-## Deploy on Vercel
+## Details about the Project
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+PromptWaves is a simple website with a few pages. The main page is a list of all the prompts that have been submitted by users. Users can sign up or log in to submit their own prompts. Each prompt has a title, a description, and a rating. Users can upvote or downvote prompts to help others find the best ones.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Details about the Usage of Every Technology Used in the Project
+
+**Next.js** is a React framework that makes it easy to build server-rendered websites. This means that PromptWaves is fast and SEO-friendly.
+
+**JavaScript** is the programming language used to build PromptWaves. JavaScript is used to create the user interface, handle user input, and make API requests.
+
+**NextAuth** is a library that makes it easy to add authentication to a Next.js website. NextAuth uses OAuth 2.0 to allow users to sign in with their Google, GitHub, or Twitter accounts.
+
+**MongoDB** is a database that is used to store the prompts that have been submitted by users. MongoDB is a NoSQL database, which means that it does not have a fixed schema. This makes it easy to store different types of data, such as text, images, and videos.
+
+**Tailwind CSS** is a utility-first CSS framework that makes it easy to style a website. Tailwind CSS provides a set of classes that can be used to style elements on a page.
+
+## Screenshots
+
+Here are some screenshots of the PromptWaves website:
+
+[![MainPage](https://i.postimg.cc/d3SmmJv7/image.png)](https://postimg.cc/tnWx9Qsy)
+
+[![Create Prompt](https://i.postimg.cc/QxzVsH09/image.png)](https://postimg.cc/mtQTy2xB)
+
+[![Profile Page](https://i.postimg.cc/kgV6txBv/image.png)](https://postimg.cc/pmHXw5Qm)
+
+## Contact Information
+
+If you have any questions about PromptWaves, please contact me at shreyanshbhadoria@gmail.com.
