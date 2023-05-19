@@ -46,7 +46,7 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
               {post.creator.username}
             </h3>
             <p className="font-inter text-sm text-gray-500">
-              {post.creator.email}
+              {/* {post.creator.email} */}
             </p>
           </div>
         </div>
@@ -82,7 +82,7 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
             Edit
           </p>
           <p
-            className="font-inter text-sm orange_gradient cursor-pointer"
+            className="font-inter text-sm cursor-pointer text-red-600"
             onClick={handleDelete}
           >
             Delete

@@ -16,21 +16,22 @@
   justify-content: center;
   padding: 120px 24px 160px 24px;
   pointer-events: none;
+  background-color: black;
 }
 
 /* Main BG Begins */
 .main:before {
-  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
+  /* background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
   position: absolute;
   content: "";
   z-index: 2;
   width: 100%;
   height: 100%;
-  top: 0;
+  top: 0; */
 }
 
 .main:after {
-  content: "";
+  /* content: "";
   background-image: url("/assets/images/grid.svg");
   z-index: 1;
   position: absolute;
@@ -38,11 +39,11 @@
   height: 100%;
   top: 0;
   opacity: 0.4;
-  filter: invert(1);
+  filter: invert(1); */
 }
 
 .gradient {
-  height: fit-content;
+  /* height: fit-content;
   z-index: 3;
   width: 100%;
   max-width: 640px;
@@ -63,7 +64,7 @@
   height: 100%;
   filter: blur(100px) saturate(150%);
   top: 80px;
-  opacity: 0.15;
+  opacity: 0.15; */
 }
 /* Main BG Ends */
 
@@ -80,23 +81,23 @@
 }
 
 .black_btn {
-  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
+  @apply rounded-lg border border-purple-900 bg-purple-900 py-1.5 px-5 text-white transition-all hover:bg-purple-600 hover:border-purple-600 hover:text-white text-center text-sm font-inter flex items-center justify-center duration-300;
 }
 
 .outline_btn {
-  @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center;
+  @apply rounded-lg border-2 border-red-600 text-red-500 bg-transparent py-1.5 px-5 transition-all hover:bg-red-600 hover:text-red-100 text-center text-sm font-inter flex items-center justify-center duration-300 font-bold;
 }
 
 .head_text {
-  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-gray-50 sm:text-6xl;
 }
 
 .orange_gradient {
-  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent;
 }
 
 .green_gradient {
-  @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent;
 }
 
 .blue_gradient {
@@ -104,11 +105,11 @@
 }
 
 .desc {
-  @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
+  @apply mt-5 text-lg text-gray-100 sm:text-xl max-w-2xl;
 }
 
 .search_input {
-  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 font-satoshi pl-5 pr-12 text-sm shadow-lg font-medium focus:border-black focus:outline-none focus:ring-0;
+  @apply block w-full rounded-md border-2 text-gray-300 border-gray-200 bg-transparent py-2.5 font-satoshi pl-5 pr-12 text-sm shadow-lg font-medium focus:border-gray-200 focus:outline-none focus:ring-0;
 }
 
 .copy_btn {
@@ -152,7 +153,7 @@
 
 /* PromptCard Component */
 .prompt_card {
-  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[360px] w-full h-fit;
+  @apply flex-1 break-inside-avoid rounded-lg border border-gray-100 bg-gray-200 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[360px] w-full h-fit;
 }
 
 .flex-center {
